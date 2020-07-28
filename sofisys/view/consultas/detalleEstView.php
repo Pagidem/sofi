@@ -1,0 +1,152 @@
+<?php include('includes/complements/head.php'); ?>
+
+<body class="sidebar-mini layout-fixed sidebar-open" style="height: auto;">
+	<div class="wrapper">
+		
+		<?php include('includes/complements/navbar.php'); ?>
+
+		<?php include('includes/complements/sidebar.php'); ?>
+
+		<!-- Cuerpo del wrapper -->
+
+		<div class="content-wrapper" style="min-height: 542.493px;">
+			<!-- Main content -->
+			<div class="invoice p-3 mb-3">
+
+				<section class="content">
+					<div class="row">
+						<div class="col-md-2">
+						</div>
+
+						<div class="col-md-8">
+							<div class="card card-primary">
+								<div class="card-header">
+									<h2 class="card-title"><strong>Detalles de Estadia Registrada</strong></h2>
+									<div class="card-tools">
+										<button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+											<i class="fas fa-minus"></i></button>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-8">
+
+									</div>
+									<div class="col-2">
+										<label>Registro N°:</label>
+									</div>
+									<div class="col-2">
+										<label id="detEst1">0000</label>
+									</div>
+								</div>
+								<div class="card-body">
+									<form method="post">
+										<label><strong>Datos de cliente</strong></label>
+										<!-- /.Campos de Documento de cliente-->
+										<div class="input-group mb-3">
+											<div class="row">
+												<div class="col-3">
+													<input type="text" class="form-control" placeholder="Nombres" id="denombre1" disabled="true">
+												</div>
+												<div class="col-3">
+													<input type="text" class="form-control" placeholder="Apellidos" id="deapellido1" disabled="true">
+												</div>
+												<div class="col-3">
+													<input type="text" class="form-control" placeholder="CI" id="dedocumento1" disabled="true">
+												</div>
+												<div class="col-3">
+													<input type="text" class="form-control" placeholder="Telefono" id="decelular1" disabled="true">
+												</div>
+											</div>
+										</div>
+										<!-- /.Campos calculo de estadia-->
+										<div class="row">
+											<div class="col-2">
+												<label><strong>Habitación</strong></label>
+												<input type="number" class="form-control" placeholder="1" id="dehabitacion1" disabled="true">
+											</div>
+											<div class="col-2">
+												<label><strong>Tipo</strong></label>
+												<input type="text" class="form-control" placeholder="Simple" id="detipo1" disabled="true">
+											</div>
+											<div class="col-3">
+												<label><strong>Fecha de ingreso</strong></label>
+												<input type="text" class="form-control" placeholder="aaaa-mm-dd" id="deingreso1" disabled="true">
+											</div>
+											<div class="col-2">
+												<label><strong>Días</strong></label>
+												<input type="number" class="form-control" placeholder="80" id="dedias1" disabled="true">
+											</div>
+											<div class="col-3">
+												<label><strong>Precio de estadia</strong></label>
+												<input type="number" class="form-control" placeholder="Días x Precio" id="deprecio1" disabled="true">
+											</div>
+										</div>
+										<br/>
+
+
+										<!-- /.Campos registrar pagos-->
+										<label><strong>Pago registrado</strong></label>
+										<br/>
+										<div class="row">
+											<div class="col-3">
+												<label><strong>Ultimo Pago</strong></label>
+												<input type="number" class="form-control" placeholder="0" id="deacuenta1" disabled="true">
+											</div>
+											<div class="col-3">
+												<label><strong>Pagado</strong></label>
+												<input type="number" class="form-control" placeholder="0" id="depagado1" disabled="true">
+											</div>
+											<div class="col-3">
+												<label><strong>Deuda</strong></label>
+												<input type="number" class="form-control" placeholder="0" id="dedeuda1" disabled="true">
+											</div>
+											<div class="col-3">
+												<label><strong>Total</strong></label>
+												<input type="number" class="form-control" placeholder="0" id="detotal1" disabled="true">
+											</div>
+										</div>
+
+										<br/>
+
+										
+										<!-- /.Campo de aceptar los terminos de la empresa-->
+										<div class="row">
+											<div class="col-3"></div>
+											<!-- /.Boton de registro-->
+											<div class="col-6">
+												<a href="?view=menus&tipo=estreg" class="btn btn-primary btn-block">Volver</a>
+											</div>
+											<div class="col-3"></div>
+											<!-- /.col -->
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-2">
+							
+						</div>
+					</div>
+				</section>
+
+
+				
+
+
+
+			</div>
+
+			
+		</div>
+
+	</div>
+	
+
+
+	<?php include('includes/complements/footer.php'); ?>
+	<script type="text/javascript" src="includes/ajax/detallEst.js"></script>
+
+</body>
+</html>
